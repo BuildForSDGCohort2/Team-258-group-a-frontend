@@ -1,0 +1,114 @@
+/*!
+ *      Default styles for all pages
+ *      Fumana global styles
+ *      (c) Fumana Teams 2020
+*/
+
+body,
+input,
+button {
+    font-size: var(--default_font__size);
+    font-family: var(--font_family);
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Utilities START */
+
+.mt-12vh {
+    margin-top: 12vh;
+}
+
+.pt-6vh {
+    padding-top: 6vh;
+}
+
+.pt-8vh {
+    padding-top: 10vh;
+}
+
+/* Utilities END */
+
+.font-size-normal {
+    font-size: normal;
+}
+
+a.text-decoration-none {
+    text-decoration: none;
+}
+
+/* Login page STYLES */
+
+.auth-container {
+    border-radius: 1rem;
+}
+
+
+.auth-container {
+    height: 75vh;
+    max-width: 98%;
+}
+
+.auth-container .left-part,
+.auth-container .right-part {
+    height: 75vh;
+    padding-top: 4vh;
+    border-radius: 0;
+}
+
+.auth-container .left-part {
+    background: linear-gradient(var(--color_primary), var(--color_tertiary));
+}
+
+.auth-container .left-part .place-holder-img {
+    margin-top: 3vh;
+}
+
+.auth-container .right-part {
+    background: var(--bg_lightgray);
+}
+
+.auth-container .right-part .auth-title {
+    font-size: 1.1875rem;
+}
+
+/* Responsive Contents START */
+
+/* For larger screens >= 1024px~1140px  */
+@media all and (min-width: 1023px) {
+
+    /* Login page STYLES */
+    .auth-container .left-part,
+    .auth-container .right-part {
+        height: 75vh;
+        padding-top: 4vh;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+
+    .auth-container .left-part {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .auth-container .left-part .place-holder-img {
+        margin-top: 3vh;
+    }
+
+    .auth-container .right-part {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .auth-container .right-part .auth-title {
+        font-size: 1.1875rem;
+    }
+}
+
+/* Responsive Contents END */
