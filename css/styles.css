@@ -22,6 +22,10 @@ button {
   margin-top: 12vh;
 }
 
+.pt-4vh {
+  padding-top: 4vh;
+}
+
 .pt-6vh {
   padding-top: 6vh;
 }
@@ -32,15 +36,28 @@ button {
 
 /* Utilities END */
 
+.font-size-large {
+  font-size: large;
+}
+
 .font-size-normal {
   font-size: normal;
+}
+
+.font-size-small {
+  font-size: small;
+}
+
+
+.font-size-smaller {
+  font-size: smaller;
 }
 
 a.text-decoration-none {
   text-decoration: none;
 }
 
-/* Login page STYLES */
+/* Auth pagesSTYLES */
 
 .auth-container {
   border-radius: 1rem;
@@ -56,7 +73,8 @@ a.text-decoration-none {
 }
 
 .auth-container .left-part,
-.auth-container .right-part {
+.auth-container .right-part,
+.auth-container .main-part {
   height: 75vh;
   padding-top: 4vh;
   border-radius: 0;
@@ -70,7 +88,8 @@ a.text-decoration-none {
   margin-top: 3vh;
 }
 
-.auth-container .right-part {
+.auth-container .right-part,
+.auth-container .main-part {
   background: var(--bg_lightgray);
 }
 
@@ -83,9 +102,15 @@ a.text-decoration-none {
 /* For larger screens >= 1024px~1140px  */
 @media all and (min-width: 1023px) {
 
-  /* Login page STYLES */
+  /* Auth pagesSTYLES */
+
+  .auth-container .main-part {
+    height: 65vh;
+  }
+
   .auth-container .left-part,
-  .auth-container .right-part {
+  .auth-container .right-part,
+  .auth-container .main-part {
     height: 75vh;
     padding-top: 4vh;
     border-radius: 1rem;
