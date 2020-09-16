@@ -72,7 +72,8 @@
               <div class="title">
                 <h2 class="font-weight-bold font-size-large">Job details</h2>
               </div>
-              <div class="job-details-border d-block border-dark border-3 bordered-radius-4 border-gray border-solid p-2">
+              <div
+                class="job-details-border d-block border-dark border-3 bordered-radius-4 border-gray border-solid p-2">
                 <div class="icon p-2 align-items-center text-center">
                   <i class="fa fa-4x fa-briefcase"></i>
                   <div class="subtitle p-2 font-weight-bold align-items-center text-center font-size-large">
@@ -117,10 +118,9 @@
                 <div class="detailed-description">
                   <div class="subtitle font-size-large text-center font-weight-bold mt-4">Job details</div>
                   <div class="desc-text p-3 font-size-normal">
-                    <p>
+                    <p class="desc-text pb-2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repudiandae xercitationem
-                      nostrum. Quidem, similique velit
-                      exercitationem nostrum. Quidem, similique velit xercitationem nostrum. Quidem, similique velit
+                      ilique velit xercitationem nostrum. Quidem, similique
                     </p>
                   </div>
                 </div>
@@ -130,12 +130,29 @@
           <div class="col-md-8">
             <div class="candidate-details">
               <div class="row mt-0">
-                <div class="col-md-9 align-items-start">
+                <div class="col-md-3 align-items-start">
                   <div class="title">
                     <h2 class="font-weight-bold">Candidates</h2>
                   </div>
                 </div>
-                <div class="col-md-3 align-items-end justify-content-end">
+                <div class="col-md-3 align-items-end justify-content-end mx-0">
+                  <button class="btn btn-primary">Add a Person</button>
+                </div>
+                <div class="col-md-5 align-items-end justify-content-end mx-0">
+                  <div class="search-container">
+                    <form class="form-inline">
+                      <input title="Search..." class="form-control form-control-sm py-2 w-100" type="text"
+                        placeholder="Search..." aria-label="Search" required="required" />
+                      <button class="btn btn-secondary btn-rounded search-icon m-0"><i class="fa fa-search"
+                          aria-hidden="true"></i>
+                      </button>
+                      <div class="invalid-feedback">
+                        Please input a term to search.
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-1 align-items-end justify-content-end m-0">
                   <div class="close">
                     <button class="btn btn-secondary px-2 py-0" title="Close">x</button>
                   </div>
@@ -144,17 +161,17 @@
               <ul class="nav nav-tabs">
                 <li class="nav-item py-2 font-size-large">
                   <a href="#applicants" class="nav-link active" data-toggle="tab">
-                    Applicants <p class="count d-inline" id="c1">(5)</p>
+                    Applicants <p class="count d-inline" id="c1">(10)</p>
                   </a>
                 </li>
                 <li class="nav-item py-2 font-size-large">
                   <a href="#shortlisted" class="nav-link" data-toggle="tab">
-                    Shortlisted <p class="count d-inline" id="c2">(4)</p>
+                    Shortlisted <p class="count d-inline" id="c2">(5)</p>
                   </a>
                 </li>
                 <li class="nav-item py-2 font-size-large">
                   <a href="#employed" class="nav-link" data-toggle="tab">
-                    Employed <p class="count d-inline" id="c3">(1)</p>
+                    Employed <p class="count d-inline" id="c3">(5)</p>
                   </a>
                 </li>
               </ul>
@@ -911,6 +928,25 @@
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mt-5">
+                <div class="col-md-4 float-left">
+                  <label class="mb-2 font-weight-bold" for="inlineFormCustomSelect">Status:</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected value="1">Created</option>
+                    <option value="2">Under review</option>
+                    <option value="3">Published</option>
+                    <option value="4">Scheduled for interview</option>
+                  </select>
+                </div>
+                <div class="col-md-6 float-right">
+                  <div class="pagination-area display-inline float-right">
+                    <span> <a title="Previous" class="text-decoration-none mr-2" href="#previous"><i
+                          class="fa fa-caret-left"></i> Previous</a></span>
+                    <span> <a title="Next" class="text-decoration-none ml-2" href="#next">Next <i
+                          class="fa fa-caret-right"></i></a></span>
                   </div>
                 </div>
               </div>
