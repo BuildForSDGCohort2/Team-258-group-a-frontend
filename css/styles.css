@@ -4,12 +4,33 @@
  *      (c) Fumana Teams 2020
 */
 
+* {
+  /* box-shadow: 1px 1px 1px #f00; */
+
+  /* For development use only */
+}
+
 body,
 input,
 button {
   font-size: var(--default_font__size);
-  font-family: var(--font_family);
+  font-family: var(--default_font__family);
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: var(--heading_font);
 }
 
 button {
@@ -34,6 +55,34 @@ button {
   padding-top: 10vh;
 }
 
+.nav-bars:before {
+  content: '\2630';
+  cursor: pointer;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-gray {
+  border-color: var(--color_gray)
+}
+
+.bordered-radius-4 {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.p-sticky {
+  position: sticky
+}
 /* Utilities END */
 
 .font-size-large {
@@ -55,6 +104,166 @@ button {
 
 a.text-decoration-none {
   text-decoration: none;
+}
+
+#sidebar {
+  min-width: 270px;
+  max-width: 270px;
+  background: var(--color_accessibility);
+  color: var(--color_light__accessibility);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  min-width: 80px;
+  max-width: 80px;
+  text-align: center;
+}
+
+#sidebar.active ul.components li {
+  font-size: 14px;
+}
+
+#sidebar.active ul.components li a {
+  padding: 10px 0;
+}
+
+#sidebar.active ul.components li a span {
+  margin-right: 0;
+  display: block;
+  font-size: 24px;
+}
+
+#sidebar.active .logo {
+  padding: 10px 0;
+}
+
+#sidebar.active .footer {
+  display: none;
+}
+
+#sidebar .logo {
+  display: block;
+  font-weight: 900;
+  padding: 10px 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #sidebar .logo {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+#sidebar ul.components {
+  padding: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #sidebar ul.components {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+#sidebar ul li {
+  font-size: 16px;
+}
+
+#sidebar ul li>ul {
+  margin-left: 10px;
+}
+
+#sidebar ul li>ul li {
+  font-size: 14px;
+}
+
+#sidebar ul li a {
+  padding: 10px 30px;
+  display: block;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li a span {
+  margin-right: 15px;
+}
+
+@media (max-width: 991.98px) {
+  #sidebar ul li a span {
+    display: block;
+  }
+}
+
+#sidebar ul li a:hover {
+  color: var(--color_white);
+}
+
+#sidebar ul li.active>a {
+  background: transparent;
+  color: var(--color_white);
+}
+
+@media (max-width: 991.98px) {
+  #sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    margin-left: -80px !important;
+  }
+
+  #sidebar.active {
+    margin-left: 0 !important;
+  }
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+.footer {
+  padding: 0 30px;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    display: none;
+  }
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /* Auth pagesSTYLES */
@@ -96,6 +305,43 @@ a.text-decoration-none {
 .auth-container .right-part .auth-title {
   font-size: 1.1875rem;
 }
+
+.jobview-container {
+  height: 90vh;
+  max-height: 540px;
+}
+
+.jobview-container .job-details,
+.jobview-container .candidate-details {
+  height: 100%;
+  width: 100%;
+}
+
+.jobview-container .job-details .title h2,
+.jobview-container .candidate-details .title h2 {
+  font-size: x-large;
+  margin: 2vh auto;
+}
+
+.jobview-container .job-description table.table th,
+.jobview-container .job-description table.table tr {
+  border-top: hidden;
+}
+
+.jobview-container .candidate-details .tab-content {
+  max-height: 80%;
+}
+
+.jobview-container .candidate-details .tab-content .table-responsive {
+  /* height: 100%; */
+  max-height: 480px;
+}
+
+.jobview-container .job-details .job-details-border {
+  /* height: 100%; */
+  max-height: 520px;
+}
+
 
 /* Responsive Contents START */
 
