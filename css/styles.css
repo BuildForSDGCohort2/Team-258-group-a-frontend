@@ -92,6 +92,14 @@ table-responsive table tr.p-sticky {
   top: 120px;
 }
 
+.remove:hover {
+  color: var(--red);
+}
+
+.edit:hover {
+  color: var(--green)
+}
+
 /* Utilities END */
 
 .font-size-large {
