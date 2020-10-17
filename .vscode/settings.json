@@ -13,5 +13,6 @@
     ],
     "cSpell.ignoreWords": [
         "fumana"
-    ]
+    ],
+    "liveServer.settings.port": 5502
 }
