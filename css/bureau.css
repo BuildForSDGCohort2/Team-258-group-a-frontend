@@ -1,0 +1,11 @@
+.content--border-gray {
+  border: 2px solid var(--color_lightgray);
+}
+
+.text {
+  color: var(--color_hover);
+}
+
+.text--bold {
+  font-weight: 600;
+}
