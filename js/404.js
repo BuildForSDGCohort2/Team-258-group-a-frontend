@@ -24,7 +24,10 @@ var parallax = function (e) {
 			$('.parallax [class*="wave"]').css("transition", "");
 		}, 700);
 	};
-$(document).ready(function () {
-	$(".not-found").on("mousemove", parallax);
-	$(".not-found").on("mouseleave", stopParallax);
-});
+
+// I feel I don't like this Parallax feature below, what do you think?
+
+// $(document).ready(function () {
+// 	$(".not-found").on("mousemove", parallax);
+// 	$(".not-found").on("mouseleave", stopParallax);
+// });
