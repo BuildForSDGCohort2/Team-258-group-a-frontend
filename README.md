@@ -63,7 +63,7 @@ communities. (First of think about the major causes of poverty in your community
 ### Project Overview
 
 If we can help implement policies to ensure resources are organized and create 
-programmes that will end poverty in all its dimensions, we can help in bringing 
+programs that will end poverty in all its dimensions, we can help in bringing 
 Poverty across developing and under-developing countries to a halt.
 
 One of the biggest problems in our community is unemployment. Some churches 
@@ -146,7 +146,7 @@ unemployment.
 
 ## Setup
 
-Describe how to install / setup your local environement / add link to demo version.
+Describe how to install / setup your local environment / add link to demo version.
 
 ## Code Examples
 
@@ -203,7 +203,7 @@ BuildforSDG Challenge 2020 - Team 258 - Fumana Project- Team Members
 |![site map detailed](./fumanaImg/fumana_logo_1.png)       |Team Mentor    |Name                   |Country     |City         |Github    |
 |![site map detailed](./fumanaImg/relax.jpg)               |Team Leader    |Dibwe Kalangu          |South Africa|Johannesburg |leanny01  |
 |![site map detailed](./fumanaImg/fumana_logo_1.png)       |Project Manager|Sphesihle Zulu         |South Africa|KwaZulu Natal|sphezulu  |
-|![site map detailed](./fumanaImg/JPEG_20200814_081646.jpg)|Front-End Dev  |Emmanuel Uchenna       |Nigeria     |Ebony State  |eunit99   |
+|![site map detailed](./fumanaImg/JPEG_20200814_081646.jpg)|Front-End Dev  |Emmanuel Uchenna       |Nigeria     |Ebonyi State |eunit99   |
 |![site map detailed](./fumanaImg/kelv_mutiso.png)         |UI/UX Dev      |Kelvin Mutiso          |Kenya       |Nairobi      |mutisikelv|
 |![site map detailed](./fumanaImg/IMG_9603_comp.jpg)       |Back-End Dev   |Soninake Oluwadamilola |Nigeria     |Lagos        |damiso15  |
 

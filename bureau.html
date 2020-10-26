@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Fumana | Bureau component</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="title" content="Fumana | Bureau component">
+    <meta name="author" content="@Fumana">
+    <meta name="description" content="Fumana helps small NGO bureaus link job seekers and potential employers">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Fumana">
+    <meta name="twitter:creator" content="@Fumana">
+    <meta name="twitter:title" content="Fumana | Bureau component">
+    <meta name="twitter:description" content="Fumana helps small NGO bureaus link job seekers and potential employers">
+    <meta name="twitter:image" content="img/logo/logo.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#004660">
+    <meta name="theme-color" content="#004660">
+    <link rel="mask-icon" href="img/logo/logo.png" color="#004660">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Fumana | Bureau component">
+    <meta property="og:url" content="https://fumana.com">
+    <meta property="og:description" content="Fumana helps small NGO bureaus link job seekers and potential employers">
+    <meta property="og:site_name" content="Fumana">
+    <meta property="og:image" content="img/logo/logo.png">
+    <meta name="og:locale" content="en_UK">
+    <meta name="fb:admins" content="fumana">
+    <meta name="og:type" content="website">
+
+    <!-- Site Verifications -->
+    <link rel="icon" href="img/logo/logo.png" class="js-favicon">
+    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+    <link rel="icon" href="img/logo/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo/logo.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!--  Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/linearicons.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/html5reset.css">
+
+    <!-- Custom styling  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/bureau.css">
+
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Contents goes here -->
+
+    <div class="container">
+      <div class="content">
+        <div class="row mt-5">
+          <div class="col-md-3 content--border-gray p-3">
+            <div class="content__content-one d-block">
+              <div class="content-one__img">
+                <img src="/img/logo/80x80.png" alt="Fumana Logo" class="img-fluid logo text-center" />
+              </div>
+              <p class="content-one__org-name"> <b class="text">Organization name:</b> {info.name}</p>
+              <p class="content-one__org-type"><b class="text">Organization type:</b> {info.type}</p>
+              <p class="content-one__acc-no"><b class="text">Fumana Acct. No.:</b> {info.id}</p>
+              <p class="content-one__date-joined"><b class="text">Date joined:</b> {info.date_joined}</p>
+              <div class="content-one__social d-inline">
+                <i class="fa fa-2x fa-facebook"></i>
+                <i class="fa fa-2x fa-twitter"></i>
+                <i class="fa fa-2x fa-mail"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 content--border-gray p-3">
+            <div class="content__content-two">
+              <div class="row">
+                <div class="col-md-3">
+                  <p class="content-two__prim-email"><b class="text">Primary email:</b>
+                    {info.contact.primary_email}
+                  </p>
+                  <p class="content-two__sec-email"><b class="text">Secondary email:</b>
+                    {info.contact.secondary_email}</p>
+                  <p class="content-two__website"> <b class="text">Website:</b> {info.website}</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="content-two__pos"><b class="text">Position in Organization:</b>
+                    {info.contact.position}
+                  </p>
+                  <p class="content-two__phone-one"><b class="text">Phone no. 1:</b> {info.contact.phone_number_1}
+                  </p>
+                  <p class="content-two__phone-two"><b class="text">Phone no. 2:</b> {info.contact.phone_number_2}
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <p class="content-two__business">
+                    Business address: {info.address[0].address}, {info.address[0].address_line_2},
+                    {info.address[0].city}
+                  </p>
+                  <p class="content-two__country">Country: {info.address[0].country}</p>
+                </div>
+                <div class="col-md-1">
+                  <a href="/edit" title="Edit"><i class="fa fa-2x fa-edit"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 content--border-gray p-3">
+            <div class="content__description-container">
+              <div class="description-container__description-title text text--bold">Description section</div>
+              <p class="description-container__description-content"> {info.description}</p>
+              <div class="description-container__tags-title text text--bold">Tags</div>
+              {info.tags}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

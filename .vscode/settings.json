@@ -1,0 +1,18 @@
+{
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "css"
+    ],
+    "cSpell.words": [
+        "fumana"
+    ],
+    "cSpell.ignoreWords": [
+        "fumana"
+    ],
+    "liveServer.settings.port": 5502
+}
